@@ -1,0 +1,301 @@
+
+body{
+    padding:0;
+    margin: 0 5px;
+    font-family: 'Raleway', sans-serif;
+    
+}
+.container{
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height:600px;
+    /* margin-bottom: 34px; */
+}
+
+h3{
+    font-family: 'Source Sans Pro', sans-serif;   
+    color:rgb(74,74,74);
+    font-size: 1.8em;
+    margin-bottom:24px;
+}
+
+/* -------- nav ------------ */
+header{
+    margin: 0 24px;
+    height: 64px;
+    display: flex;
+    width: 100%;
+ justify-content: center;
+    align-items: center; 
+}
+header img{
+    height: inherit;
+}
+.logo{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 32px;
+    flex-grow: 2;
+   
+}
+#sLogo{
+    color:gray;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+   
+
+}
+nav ul{
+ display: inline-flex;
+ justify-content: flex-end;
+ align-items:flex-end;
+ margin-left: 24px;
+}
+nav ul li{
+    margin-right: 16px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 25px;
+}
+
+/* -------- intro -------------- */
+.intro .container{
+    display: flex;
+    background-color: rgb(216,216,216);
+    color:rgb(74,74,74);
+    width: 100%;
+    /* margin-bottom: 100px; */
+    /* border: 2px solid red; */
+
+}
+ .image {
+    
+    width: 60%;
+    padding: 32px 24px ;
+    overflow: hidden;
+    flex-grow: 3;
+}
+.image img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.info{
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-items: flex-start;
+    align-content: center;
+    width: 40%;
+    /* border: 2px solid red; */
+    /* padding-right: 10%;
+ */
+}
+.info h1 {
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 2.5em;  
+    margin: 0;
+    padding-right: 35%;
+
+}
+.info p{
+
+font-family: 'Source Sans Pro', sans-serif; 
+font-size: 1.5em;  
+padding-right: 10px;
+padding-right: 35%;
+
+}
+.button{
+    background-color:rgb(74,74,74);
+    color: white;
+    padding: 8px 25%;
+}
+
+
+/* ----------- information ------------------- */
+
+.information{
+
+    margin: 34px 0;
+}
+.left{
+
+    width: 60%;
+    /* margin:24px; */
+
+     padding-right: 24px ;
+     border-right : 1px solid lightgray;
+
+}
+.left .image {
+    width:90%;
+    padding-right: 24px ;
+    margin: 0;
+}
+
+.right{
+    /* border: 2px solid red; */
+    width: 40%;
+    height: fit-content;
+}
+li .image{
+    padding: 16px;
+}
+.right ul{
+    display: flex;
+    flex-direction: column;
+    padding:0;
+}
+.right ul li{
+    display: inline-flex;
+    border-bottom: 1px solid rgb(74,74,74);
+    
+    
+}
+.right .image{
+    width: 35%;
+}
+.description{
+    width:65%;
+}
+.guest-lecture{
+    background-color: rgb(216,216,216);
+}
+
+/* --------courses ------- */
+#start-learning{
+    margin-top: 104px;
+    background-color: rgb(234,235,236);
+    padding: 32px 72px;
+    text-align: center;
+    height: fit-content;
+    width: auto;
+}
+#start-learning h3{
+    margin-bottom: 32px;
+    width: 100%;
+}
+#start-learning .box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  
+}
+
+.courses{
+    /* border: 2px solid black; */
+    background-color: white;
+    width:350px;
+    height:370px;
+    margin: 32px;
+    text-align: left;
+
+}
+
+.course-img{
+    height:40%;
+    width: auto;
+    overflow: hidden;
+}
+.course-img img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.course-info{
+    height:60%;
+    width: auto;
+    padding: 0 16px;
+    font-size: 1em;
+}
+h4{
+    font-family: 'Source Sans Pro', sans-serif;   
+    color:rgb(74,74,74);
+    font-size: 1.5em;
+    margin: 16px 0;
+}
+.course-info p span{
+    letter-spacing: 1px;
+    line-height: 10px;
+    /* border: 8px solid red; */
+    padding: 8px 0;
+    margin: 8px 0;
+}
+.course-info p, span{
+    color:rgb(108, 109, 110);
+}
+
+/* ---- exhibit --- */
+#exhibit{
+    text-align: center;
+    /* width:0  90%; */
+    border: 1px solid rgb(108, 109, 110);
+   
+}
+.exhibit-box{
+    display: flex;
+}
+
+ .exhibit-box .left{
+    width: 60%;
+    padding:0 24px;
+    border: none;
+}
+.right{
+    width:40%;
+    margin-right: 10px;
+}
+
+video{
+    
+    border: 1px solid rgb(108, 109, 110);
+    /* padding:0 24px; */
+}
+.video-info{
+text-align: left;
+padding: 24px;
+}
+
+.exhibit-box .right ul li {
+    border: none;
+}
+.exhibit-img{
+    width:35%;
+    height: auto;
+    padding: 16px;
+    overflow: hidden;
+}
+.exhibit-img img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.img-info{
+    width:65%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: center;
+}
+.one{
+    background-color: rgb(216,216,216);
+}
+
+/* ---------- footer --------- */
+footer{
+    padding:16px 24px 32px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+footer div{
+    flex-grow: 4;
+}
