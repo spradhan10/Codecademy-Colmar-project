@@ -19,7 +19,9 @@ h3{
     font-size: 1.8em;
     margin-bottom:24px;
 }
-
+.mobile-view{
+display: none;
+}
 /* -------- nav ------------ */
 header{
     margin: 0 24px;
@@ -255,6 +257,7 @@ h4{
 video{
     
     border: 1px solid rgb(108, 109, 110);
+    background-color: black;
     /* padding:0 24px; */
 }
 .video-info{
@@ -299,3 +302,93 @@ footer{
 footer div{
     flex-grow: 4;
 }
+
+
+
+
+/* --------------- MOBILE VIEW-------- */
+
+@media screen and (max-width: 480px) {
+    body{
+        margin: 0;
+    }
+
+    /* ------ header ---------- */
+ .desktop-view{
+     display: none;
+     
+ }
+ .mobile-view{
+     display: block;
+ }
+ .mobile-view header{
+     margin: 0;
+ }
+ .mobile-view header ul {
+    width: 95%;
+    height: 64px;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding:0 2px;
+   
+  
+ }
+ .mobile-view ul li {
+     height: 100%;
+
+ }
+    
+/* ---------intro-------- */
+
+.intro .container{
+    flex-flow: column;
+    
+} 
+.image{
+    height: 40%;
+    width: 100%;
+    padding:0;
+}
+.info{
+    height: 55%;
+    width: 100%;
+    padding: 0 16px;
+    
+}
+.information .container{
+    height: auto;
+}
+.information .container .left{
+    display: none;
+}
+.information .container .right{
+    width: 100%;
+    
+}
+.right ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    border:none;
+    margin-bottom: 64px;
+}
+.right .image{
+    width: 24em;
+    height: 14.8em;
+    overflow: hidden;
+}
+.right .image img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.guest-lecture{
+    background: none;
+}
+};
