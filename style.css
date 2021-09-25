@@ -169,6 +169,9 @@ li .image{
 .guest-lecture{
     background-color: rgb(216,216,216);
 }
+.read-more{
+    color: rgb(49, 94, 199);
+}
 
 /* --------courses ------- */
 #start-learning{
@@ -308,7 +311,7 @@ footer div{
 
 /* --------------- MOBILE VIEW-------- */
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
     body{
         margin: 0;
     }
@@ -380,7 +383,7 @@ footer div{
 }
 .right .image{
     width: 24em;
-    height: 14.8em;
+    height: 13.8em;
     overflow: hidden;
 }
 .right .image img{
@@ -391,4 +394,36 @@ footer div{
 .guest-lecture{
     background: none;
 }
-};
+
+/* --------- courses --------- */
+#start-learning {
+    background: none;
+    width: 95%;
+    text-align: center;
+    padding:0;
+    margin-top:32px;
+    border-top: 1px solid rgb(216,216,216);
+}
+
+ #start-learning .mobile-view ul li{
+    width: auto;
+    padding: 16px 0 24px 16px;
+    list-style: none;
+    text-decoration:none;
+    background-color:rgb(234,235,236);
+    margin-bottom:8px;
+}
+#exhibit{
+    border:none;
+    border-top: 1px solid rgb(216,216,216);
+    border-bottom:1px solid rgb(216,216,216) ;
+    margin-bottom: 24px;
+}
+/* ------- footer------------- */
+
+footer span{
+    margin: 16px 0;
+    display: none;
+}
+
+}
