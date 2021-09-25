@@ -315,15 +315,15 @@ footer div{
     body{
         margin: 0;
     }
-
+    .desktop-view{
+        display: none;
+        
+    }
+    .mobile-view{
+        display: block;
+    }
     /* ------ header ---------- */
- .desktop-view{
-     display: none;
-     
- }
- .mobile-view{
-     display: block;
- }
+ 
  .mobile-view header{
      margin: 0;
  }
@@ -405,7 +405,7 @@ footer div{
     border-top: 1px solid rgb(216,216,216);
 }
 
- #start-learning .mobile-view ul li{
+#start-learning .mobile-view ul li{
     width: auto;
     padding: 16px 0 24px 16px;
     list-style: none;
