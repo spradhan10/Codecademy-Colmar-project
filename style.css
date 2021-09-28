@@ -68,12 +68,12 @@ nav ul li{
     background-color: rgb(216,216,216);
     color:rgb(74,74,74);
     width: 100%;
-    /* margin-bottom: 100px; */
+    margin-bottom: 100px;
     /* border: 2px solid red; */
 
 }
+
  .image {
-    
     width: 60%;
     padding: 32px 24px ;
     overflow: hidden;
@@ -311,9 +311,11 @@ footer div{
 
 /* --------------- MOBILE VIEW-------- */
 
-@media (max-width: 480px) {
-    body{
-        margin: 0;
+@media only screen and (min-width: 320px) and (max-width:480px), 
+(orientation:portrait){
+   body{
+        margin:0;
+        padding:0;
     }
     .desktop-view{
         display: none;
@@ -325,11 +327,11 @@ footer div{
     /* ------ header ---------- */
  
  .mobile-view header{
-     margin: 0;
+     margin: 20px;
  }
  .mobile-view header ul {
     width: 95%;
-    height: 64px;
+    height: 66px;
     list-style: none;
     text-decoration: none;
     display: flex;
@@ -337,33 +339,61 @@ footer div{
     align-content: center;
     align-items: center;
     padding:0 2px;
-   
+    
   
  }
  .mobile-view ul li {
      height: 100%;
 
  }
+ .mobile-view ul li img{
+     padding: 15px;
+ }
     
 /* ---------intro-------- */
 
 .intro .container{
-    flex-flow: column;
+   flex-flow: column;
+   width: 100%;
+   height: 1570px;
+   margin-bottom: 16px;
     
 } 
-.image{
-    height: 40%;
+.intro .container .image {
+    height: 50%;
     width: 100%;
     padding:0;
 }
-.info{
-    height: 55%;
+
+
+.image img{
+    display: block;
+    height: 100%;
     width: 100%;
-    padding: 0 16px;
-    
 }
+.info{
+    justify-content: flex-start;
+    height: 50%;
+    width: auto;
+    padding: 0 16px;
+    background-color:rgb(216,216,216) ;
+    align-items: stretch;
+}
+.info h1, #start-learning h3{
+    font-size: 6em;
+}
+.info p, .button, .description{
+    font-size: 2.7em;
+}
+.button{
+   text-align: center;
+   padding: 16px;
+}
+
+/* ------- information -------------- */
 .information .container{
     height: auto;
+    width: 100%;
 }
 .information .container .left{
     display: none;
@@ -382,8 +412,8 @@ footer div{
     margin-bottom: 64px;
 }
 .right .image{
-    width: 24em;
-    height: 13.8em;
+    width: 100%;
+    height: fit-content;
     overflow: hidden;
 }
 .right .image img{
@@ -394,16 +424,27 @@ footer div{
 .guest-lecture{
     background: none;
 }
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    align-items: flex-start;
+    align-content: center;
+    width: 90%;
+}
 
 /* --------- courses --------- */
 #start-learning {
     background: none;
     width: 95%;
+    height: 900px;
     text-align: center;
     padding:0;
     margin-top:32px;
     border-top: 1px solid rgb(216,216,216);
 }
+
 
 #start-learning .mobile-view ul li{
     width: auto;
@@ -412,12 +453,18 @@ footer div{
     text-decoration:none;
     background-color:rgb(234,235,236);
     margin-bottom:8px;
+    font-size: 3em;
+    font-weight: 10px;
 }
+
+
+/* ------- exhibit----------- */
 #exhibit{
     border:none;
     border-top: 1px solid rgb(216,216,216);
     border-bottom:1px solid rgb(216,216,216) ;
     margin-bottom: 24px;
+    font-size: 2.7em;
 }
 /* ------- footer------------- */
 
