@@ -448,6 +448,7 @@ footer div{
 
 #start-learning .mobile-view ul li{
     width: auto;
+    height: max-content;
     padding: 16px 0 24px 16px;
     list-style: none;
     text-decoration:none;
@@ -455,6 +456,7 @@ footer div{
     margin-bottom:8px;
     font-size: 3em;
     font-weight: 10px;
+    text-align: left;
 }
 
 
